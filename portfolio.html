@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylecsheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+      <div id="progressbar"></div>
+      <div id="scrollpath"></div>
+
+      <div class="cursor"></div>
+      <div class="cursor2"></div>
+      <header>
+
+    </header>
+    <div class="content2">
+      <img class="portfolio" src="img/porfolio.png" alt="portfolio">
+          <div class="caixas">
+            <div class="box">
+              <div class="imgBx">
+                <a href="edgemagazine.html"> <img src="img/revista.jpg" alt="revista"> </a>
+              </div>
+              <div class="content">
+                <h2>Revista EDGE <br><span>Projeto Editorial</span></h2>
+              </div>
+            </div>
+            <div class="box">
+              <div class="imgBx">
+                <a href="https://fb.watch/7sSsIqAMOz/"><img src="img/entrevista_jose meireles.jpg" alt="entrevista_jose meireles"></a>
+              </div>
+              <div class="content">
+                <h2>José Meireles n"O Louzadense"<br><span>Entrevista Jornalística</span></h2>
+              </div>
+            </div>
+          </div>
+          <div class="caixas caixas2">
+            <div class="box">
+              <div class="imgBx">
+                <a href="https://fb.watch/7sSrvusytm/"><img src="img/luis.jpg" alt="luis"></a>
+              </div>
+              <div class="content">
+                <h2>Luís Moreira n"O Louzadense"<br><span>Entrevista Jornalística</span></h2>
+              </div>
+            </div>
+            <div class="box">
+              <div class="imgBx">
+                <a href="museulema.html"><img src="img/museulema.jpg" alt="museulema"></a>
+              </div>
+              <div class="content">
+                <h2>MotorSport Museum | Museu Lema<br><span>Vídeo Histórico</span></h2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+      <!--<footer>
+       <div class="textfooter">
+         <h5></h5>
+       </div>
+       <div class="about">
+         <div class="icons">
+           <div class="socialicon">
+             <a href="">
+               <img src="icons/instagram.png" alt="instagram">
+             </a>
+           </div>
+           <div class="socialicon">
+             <a href="">
+               <img src="icons/facebook.png" alt="facebook">
+             </a>
+           </div>
+         </div>
+         <div class="textabout">
+           <a href="#">About</a>
+           <a href="#">Contacts</a>
+           <a href="playlist.html">My playlist</a>
+         </div>
+       </div>
+
+     </footer>  -->
+
+
+
+     <script type="text/javascript">
+       var progress = document.getElementById('progressbar'
+     );
+       var totalHeight = document.body.scrollHeight -
+         window.innerHeight;
+       window.onscroll = function(){
+           var progressHeight = (window.pageYOffset /
+             totalHeight) * 100;
+           progress.style.height = progressHeight + "%";
+       }
+     </script>
+     <script>
+     var cursor = document.querySelector(".cursor");
+     var cursor2 = document.querySelector(".cursor2");
+     document.addEventListener("mousemove",function(e){
+       cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+     });
+     </script>
+
+
+        </body>
+    </html>

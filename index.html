@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylecsheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+      <div id="progressbar"></div>
+      <div id="scrollpath"></div>
+
+      <div class="cursor"></div>
+      <div class="cursor2"></div>
+      <header>
+
+    </header>
+    <div class="content2">
+      <section class="wrapper">
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+      </section>
+    <div class="page">
+
+        <div id="title">
+          <img src="img/logo_amarelo.png" alt="logo_amarelo">
+        </div>
+
+        <div class="indextext">
+          <div class="caixas">
+            <div class="box">
+              <div class="imgBx">
+                <img src="img/jose_moreira.jpg" alt="jose_moreira">
+              </div>
+              <div class="content">
+                <h2>José Moreira <br><span>Designer Multimédia</span></h2>
+              </div>
+            </div>
+            <div class="box">
+              <div class="imgBx">
+                <img src="img/gonçalo_mota.jpg" alt="gonçalo_mota">
+              </div>
+              <div class="content">
+                <h2>Gonçalo Mota<br><span>Tropinha</span></h2>
+              </div>
+            </div>
+          </div>
+          <div class="TEXT">
+            <h5> O Edge Coletivo é um grupo de artistas focados a desenvolver e criar arte. Esta criação é aplicada a clientes, obras independentes ou para a conceção de algo maior.
+              José Moreira, um Designer Multimédia, é formado em Artes Digitais e Multimédia e os seus maiores interesses são Design, Arte Conceptual e Web Design. Gonçalo Mota, é um cinematógrafo, licenciado em Cinema na faculdade de MiddleSex em Londres. Gonçalo pretende elaborar obras tanto em filme como vídeo.
+              Temos uma variedade de capacidades técnicas proponderantes para responder a cada cliente específico.
+
+              Podes conhecer um pouco mais ao clicares no link do Portfólio:
+            </h5>
+          </div>
+          <nav>
+            <a href="portfolio.html" class="button">O nosso Portfolio</a>
+          </nav>
+        </div>
+    </div>
+    </div>
+
+
+
+      <!--<footer>
+       <div class="textfooter">
+         <h5></h5>
+       </div>
+       <div class="about">
+         <div class="icons">
+           <div class="socialicon">
+             <a href="">
+               <img src="icons/instagram.png" alt="instagram">
+             </a>
+           </div>
+           <div class="socialicon">
+             <a href="">
+               <img src="icons/facebook.png" alt="facebook">
+             </a>
+           </div>
+         </div>
+         <div class="textabout">
+           <a href="#">About</a>
+           <a href="#">Contacts</a>
+           <a href="playlist.html">My playlist</a>
+         </div>
+       </div>
+
+     </footer>  -->
+
+
+
+     <script type="text/javascript">
+       var progress = document.getElementById('progressbar'
+     );
+       var totalHeight = document.body.scrollHeight -
+         window.innerHeight;
+       window.onscroll = function(){
+           var progressHeight = (window.pageYOffset /
+             totalHeight) * 100;
+           progress.style.height = progressHeight + "%";
+       }
+     </script>
+     <script>
+     var cursor = document.querySelector(".cursor");
+     var cursor2 = document.querySelector(".cursor2");
+     document.addEventListener("mousemove",function(e){
+       cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+     });
+     </script>
+
+
+        </body>
+    </html>
