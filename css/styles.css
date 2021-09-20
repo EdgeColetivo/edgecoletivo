@@ -984,15 +984,16 @@ h3 {
       padding: 20px;
       width: auto;
     }
-    .indextext {
-      padding-top: 300px;
-    }
     .portfolio  {
       width: 80%;
     }
     .caixas {
       flex-direction: column;
       height: 800px;
+      margin-top: 500px;
+    }
+    .TEXT h5 {
+      font-size: 14px;
     }
     .caixas2 {
       padding-top: 0px;
@@ -1000,5 +1001,11 @@ h3 {
     .videoabifeijo video {
       width: 400px;
       height: 150px;
+    }
+    #title img {
+      width: 70%;
+    }
+    .indextext {
+      background: none;
     }
 }
